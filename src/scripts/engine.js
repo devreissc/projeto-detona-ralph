@@ -35,7 +35,7 @@ function countDown(){
     state.view.timeLeft.textContent = state.values.currentTime;
 
     if(state.values.currentTime <= 0){
-        alert("Fim de jogo... Pontuação: " + state.values.score);
+        alert("Fim de jogo... Pontuação: " + state.values.result);
         clearInterval(state.actions.countDownTimer);
         clearInterval(state.actions.timerId);
     }
